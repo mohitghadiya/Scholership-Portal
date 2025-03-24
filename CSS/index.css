@@ -1,0 +1,236 @@
+
+.btn-login, .btn-signup {
+    background-color: #2c3e50;
+    color: white;
+}
+.btn-login:hover, .btn-signup:hover {
+    background-color: #f5a601;
+    color: white;
+
+}
+
+.nav-link:hover {
+    color: #f5a601 !important;
+}
+
+.scholarship-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-custom {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.apply-btn {
+    background-color: #2c3e50;
+}
+.apply-btn:hover {
+    background-color: #f5a601;
+    text-decoration: underline;
+    color:white;
+}
+
+
+.browse-btn {
+    background-color: #2c3e50;
+    
+}
+.browse-btn:hover {
+    background-color: #f5a601;
+    text-decoration: underline;
+    color:white;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.step {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.step img {
+    width: 150px;
+    height: auto;
+}
+
+.divider {
+    width: 80%;
+    height: 5px;
+    background-color: #f5a601;
+    margin: 10px auto;
+}
+
+.step-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.arrow {
+    width: 40px;
+    height: auto;
+}
+
+
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.stats-card {
+    transition: transform 0.3s;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.stats-card:hover {
+    transform: scale(1.05);
+}
+.stats-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+.step-card {
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.step-card:hover {
+    transform: scale(1.05);
+    background-color: #f5a601; /* Dark Yellow */
+    color: white;
+}
+
+.step-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+
+.partner-section {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.partner-image {
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+    margin: 20px auto;
+    display: block;
+}
+.partner-image:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* scholership */
+.scholarship-card {
+    transition: all 0.3s ease-in-out;
+    border: none;
+    width: 18rem; 
+    min-height: 350px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+.scholarship-card:hover {
+    background-color: #f8f9fa   ;
+
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.scholarship-btn {
+    background-color: #f5a601;
+    border: none;
+}
+.scholarship-btn:hover {
+    background-color: #b57e2a;
+}
+
+
+.scholarship-card img {
+    max-width: 100px; /* Image size controlled */
+    height: auto;
+}
+
+
+/* notice board */
+
+.notice-board {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.notice-header {
+    background-color: #adb5bd;
+    color: #212529;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.notice-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.notice-item:last-child {
+    border-bottom: none;
+}
+.bullet {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* animation */
+.show{
+    animation: show 0.5s;
+    animation-timeline: view();
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: scale(0.6)
+    } 35%, 85%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(0.6);
+    }
+}

@@ -1,0 +1,29 @@
+.btn-login, .btn-signup {
+    background-color: #2c3e50;
+    color: white;
+}
+.btn-login:hover, .btn-signup:hover {
+    background-color: #fcf300;
+    color: white;
+
+}
+
+ .nav-link:hover {
+    color: #f5a601 !important;
+}
+body{
+    background-color: #ffffff;
+}
+.submit-btn {
+    background-color: #00246B;
+    color: white;
+    border: none;
+}
+.submit-btn:hover {
+    background-color: #cadcfc;
+    color: black;
+
+}
+.hedder-container {
+    background-color: #8AAAE5;
+}

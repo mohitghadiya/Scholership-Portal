@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extended Responsive Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Form1.css"/>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="form-container">
+
+        <h4 class="text-center" >Personal Details</h4>
+        <form id="myForm" onsubmit="return validateForm()">
+
+            <div class="mb-3">
+                <label class="form-label">Upload Your Photo</label>
+                <input type="file" class="form-control" id="Photo" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter full name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <div>
+                    <input type="radio" class="btn-check" name="gender" id="male" value="Male" required>
+                    <label class="btn btn-outline-primary" for="male">Male</label>
+
+                    <input type="radio" class="btn-check" name="gender" id="female" value="Female">
+                    <label class="btn btn-outline-primary" for="female">Female</label>
+
+                    <input type="radio" class="btn-check" name="gender" id="transgender" value="Transgender">
+                    <label class="btn btn-outline-primary" for="transgender">Transgender</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-select" id="category" required>
+                    <option value="">Select</option>
+                    <option value="Open">Open</option>
+                    <option value="OBC">OBC</option>
+                    <option value="SC/ST">SC/ST</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="maritalStatus" class="form-label">Marital Status</label>
+                <select class="form-select" id="maritalStatus" required>
+                    <option value="">Select</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="mobile" class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobile" placeholder="Enter mobile number" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Upload ID Proof</label>
+                <input type="file" class="form-control" id="idProof" required>
+            </div>
+
+            <!-- bank details -->
+            <button class="btn  w-100 mb-3" style="background-color:#ffa500;" type="button" data-bs-toggle="collapse" data-bs-target="#bankDetails">Bank details</button>
+            <div class="collapse mt-3" id="bankDetails">
+
+                <!-- Bank Account Number -->
+                <div class="mb-3">
+                    <label for="accountNumber" class="form-label">Savings Bank Account Number</label>
+                    <input type="number" class="form-control" id="accountNumber" placeholder="Enter account number" required>
+                </div>
+
+                <!-- Re-enter Account Number -->
+                <div class="mb-3">
+                    <label for="confirmAccountNumber" class="form-label">Re-enter Account Number</label>
+                    <input type="number" class="form-control" id="confirmAccountNumber" placeholder="Re-enter account number" required>
+                </div>
+
+                <!-- IFSC Code -->
+                <div class="mb-3">
+                    <label for="ifscCode" class="form-label">IFSC Code</label>
+                    <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC code" required>
+                </div>
+
+                <!-- Bank Name -->
+                <div class="mb-3">
+                    <label for="bankName" class="form-label">Bank Name</label>
+                    <input type="text" class="form-control" id="bankName" placeholder="Enter bank name" required>
+                </div>
+
+                <!-- Branch Name -->
+                <div class="mb-3">
+                    <label for="bankBranch" class="form-label">Bank Branch</label>
+                    <input type="text" class="form-control" id="bankBranch" placeholder="Enter bank branch" required>
+                </div>
+
+                <!-- Name as per Passbook -->
+                <div class="mb-3">
+                    <label for="passbookName" class="form-label">Your Name as per Bank Passbook</label>
+                    <input type="text" class="form-control" id="passbookName" placeholder="Enter name" required>
+                </div>
+
+                <!-- Upload Bank Passbook/Statement -->
+                <div class="mb-3">
+                    <label class="form-label">Upload Bank Passbook/Statement</label>
+                    <input type="file" class="form-control" id="bankStatement" accept=".jpg, .png, .pdf" required>
+                </div>
+            </div>
+
+            <!-- Collapsible Sections -->
+            <button class="btn  w-100" style="background-color:#ffa500;" type="button" data-bs-toggle="collapse" data-bs-target="#academicDetails">Current Academic Details</button>
+            <div class="collapse mt-3" id="academicDetails">
+                <div class="section-title">Academic Details</div>
+                
+                <div class="mb-3">
+                    <label for="university" class="form-label">University Name</label>
+                    <input type="text" class="form-control" id="university" placeholder="Enter university name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="course" class="form-label">Course</label>
+                    <input type="text" class="form-control" id="course" placeholder="Enter course name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="year" class="form-label">Year of Study</label>
+                    <select class="form-select" id="year" required>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="btn  w-100 mt-3" style="background-color:#ffa500;" type="button" data-bs-toggle="collapse" data-bs-target="#educationDetails">Education Details</button>
+            <div class="collapse mt-3" id="educationDetails">
+                <div class="section-title">Education Details</div>
+
+                <div class="mb-3">
+                    <label for="highschool" class="form-label">High School Name</label>
+                    <input type="text" class="form-control" id="highschool" placeholder="Enter high school name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="highschoolMarks" class="form-label">High School Marks (%)</label>
+                    <input type="number" class="form-control" id="highschoolMarks" placeholder="Enter marks" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="higherSecondary" class="form-label">Higher Secondary School Name</label>
+                    <input type="text" class="form-control" id="higherSecondary" placeholder="Enter school name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="higherSecondaryMarks" class="form-label">Higher Secondary Marks (%)</label>
+                    <input type="number" class="form-control" id="higherSecondaryMarks" placeholder="Enter marks" required>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid mt-3">
+                <button type="submit" class="btn btn-warning w-100">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        var fullName = document.getElementById("fullName").value;
+        var dob = document.getElementById("dob").value;
+        var email = document.getElementById("email").value;
+        var mobile = document.getElementById("mobile").value;
+        var accountNumber = document.getElementById("accountNumber").value;
+        var confirmAccountNumber = document.getElementById("confirmAccountNumber").value;
+        var ifscCode = document.getElementById("ifscCode").value;
+
+        // Full Name validation
+        if (fullName.length < 3) {
+            alert("Full Name must be at least 3 characters long!");
+            return false;
+        }
+
+        // Date of Birth validation
+        if (new Date(dob) >= new Date()) {
+            alert("Date of Birth must be in the past!");
+            return false;
+        }
+
+        // Email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Invalid email address!");
+            return false;
+        }
+
+        // Mobile number validation
+        var mobileRegex = /^[0-9]{10}$/;
+        if (!mobileRegex.test(mobile)) {
+            alert("Invalid mobile number!");
+            return false;
+        }
+
+        // Account Number validation
+        if (accountNumber !== confirmAccountNumber) {
+            alert("Account numbers do not match!");
+            return false;
+        }
+
+        // IFSC Code validation
+        var ifscRegex = /^[A-Za-z]{4}[a-zA-Z0-9]{7}$/;
+        if (!ifscRegex.test(ifscCode)) {
+            alert("Invalid IFSC code!");
+            return false;
+        }
+
+        if (confirm("Would you like to submit your form?")) {
+            window.location.href = 'ex_index.html';
+        }
+        return false;
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
